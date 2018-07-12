@@ -60,6 +60,7 @@ a:active {
   /* grid-gap: 10px; */ /* Sets gap space between both colums and rows */
   max-width: 960px;
   /* margin: 0 auto; */ /* Sets margins all the way around the grid blocks */
+  position: fixed;
 }
 /* #content div {
   background: #3bbced;
