@@ -74,6 +74,7 @@ a:active {
   margin-top: 20px;
   margin-left: 50px;
   grid-column: 1 / 3; /* Same as writing the above 2 columns seperatly */
+  position: fixed;
 }
 .two{
   grid-column: 3 / 7;
