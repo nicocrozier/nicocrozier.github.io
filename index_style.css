@@ -50,25 +50,8 @@ a:active {
     font-style: italic;
 }
 
-#content {
-  display: grid;
-  grid-template-rows: repeat(3, minmax(250px, auto));
-  grid-auto-rows: 900px;  /* Makes each row a set height reguardless of content */
-  /*grid-auto-rows: minmax(200px, auto); */ /* Sets min height off 200px but if content goes more than 200px then auto height relative to content*/
-  grid-auto-columns: minmax(140px, auto); /* Sets Width of blocks */
-  grid-column-gap: 10px; /* Sets gap only between grid blocks, not completely around */
-  grid-row-gap: 10px;
-  /* grid-gap: 10px; */ /* Sets gap space between both colums and rows */
-  max-width: 960px;
-  /* margin: 0 auto; */ /* Sets margins all the way around the grid blocks */
-}
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
+
 
 body {
   background-image: url("https://raw.githubusercontent.com/nicocrozier/nicocrozier/master/background.jpg");
