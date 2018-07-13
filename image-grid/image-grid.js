@@ -1,6 +1,4 @@
-<button onclick="one ()">1</button>
-<button onclick="two ()">2</button>
-<button onclick="three ()">3</button>
+
 
 
 <script>
