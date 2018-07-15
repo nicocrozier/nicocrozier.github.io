@@ -51,14 +51,14 @@ a:hover {
     background-color: transparent;
     text-decoration: none;
     font-style: none;
-    font-size: 98%;
+    font-size: 98.5%;
 }
 
 a:active {
-    color: grey;
+    color: inherit;
     background-color: transparent;
     text-decoration: none;
-    font-style: italic;
+    font-style: none;
 }
 
 #content {
