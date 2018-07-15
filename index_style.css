@@ -44,6 +44,11 @@ a:link {
     text-decoration: none;
 }
 
+a:visited {
+    color: #b7b7b7;
+    background-color: transparent;
+    text-decoration: none;
+}
 
 
 a:hover {
