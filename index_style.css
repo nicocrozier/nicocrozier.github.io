@@ -55,7 +55,7 @@ a:hover {
 }
 
 a:active {
-    color: inherit;
+    color: #b7b7b7;
     background-color: transparent;
     text-decoration: none;
     font-style: none;
