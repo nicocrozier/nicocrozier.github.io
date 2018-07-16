@@ -16,7 +16,7 @@ h5 {
     font-family: 'Spectral'. serif; font-style: italic;  font-size: 14px;
 }
 h6 {
-    font-family: 'Cousine', monospace; font-size: 14px;
+    font-family: 'Cousine', monospace; font-size: 21px;
 }
 p {
     font-family: 'Spectral', serif; font-size: 14px; font-weight: 400;
@@ -99,14 +99,5 @@ a:active {
 }
 
 body {
-  background-image: url("https://raw.githubusercontent.com/nicocrozier/nicocrozier/master/background.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-color: #d8d8d8;
 }
