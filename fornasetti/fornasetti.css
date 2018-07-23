@@ -28,6 +28,30 @@ img {
   }
 }
 
+.t-001 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.t-002 span{
+
+  font-family: sans-serif;
+  font-size: 5vw;
+  background-color: #42f1ef;
+}
+
+.t-003 {
+  grid-column: 6 / 7;
+  grid-row: 4 / 5 ;
+}
+
+.t-004 span {
+  font-family: monospace;
+  font-size: 2vw;
+  
+}
+
+
 .f-001 {
   grid-column: 3 / 4;
   grid-row: 1 / 2 ;
