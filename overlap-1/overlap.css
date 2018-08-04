@@ -30,7 +30,7 @@ img {
   grid-column:1 / 3 ;
   grid-row:1 / span 3 ;
   object-fit: cover;
-  box-shadow: 1rem 1rem cyan;
+  box-shadow: 1rem 1rem #8027ce;
 
 }
 
@@ -49,4 +49,19 @@ font-family:sans-serif;
     padding: 0.5rem 0.25rem 0;
     box-decoration-break: clone;
     background-color: #FFED00;
+  }
+
+h3 {
+  font-family: serif;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 1.0;
+  margin: 0;
+  grid-column: 3 / 4;
+  grid-row: 3;
+}
+  h3 span {
+    display: inline;
+    padding: 0.5rem 0.25rem 0;
+
   }
