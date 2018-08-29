@@ -10,6 +10,29 @@
 </head>
 <body>
 
+  <!-- TOP CONTAINER -->
+  <div class="top-container">
+  <img src="0056.jpg" width="100%">
+  
+</div>
+
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+
+<!-- END OF CONTAINER -->
+
   <ul class="fontitalic" style="list-style-type:none">
     <li class="f01"><a class="active" href="#home">Home</a></li>
     <li class="f02"><a href="#news">News</a></li>
