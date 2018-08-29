@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="fashion-m.css">
+  <title>HARLEY WEIR</title>
+</head>
+<body>
+
+<div class="grid">
+
+  <!-- IMAGES -->
+  <span class="g02" >
+    <img class="mySlides" src="001.jpg" style="width:100%">
+    <img class="mySlides" src="008.jpg" style="width:100%">
+    <img class="mySlides" src="009.jpg" style="width:100%">
+  </span>
+
+<!-- IMAGE BLOCK 1 SCRIPT -->
+  <script>
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+  </script>
+<!-- END SCRIPT -->
+
+<!-- IMAGE 2 -->
+  <span class="g03"><img src="005.jpeg" width="100%" alt="Utah"></span>
+  <!--<span class ="g04"><img src="006.jpg" width="100%" alt="New York"></li></span> -->
+
+
+<!-- TITLE -->
+  <div class="g01 title">
+    <p>Title</p>
+  </div>
+
+  <!-- SOPPING BAG -->
+  <div class="shoppingbag">
+    <p><a href="http://www.google.com">Shopping Bag</a></p>
+  </div>
+
+
+
+
+<!-- SCRIPT -->
+
+  <span class="mood">
+    <h3>Mood & Feeling</h3>
+    <button onclick="typeWriter()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Frozen in time,';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+    <p>This is some text that we can change</p>
+  </span>
+
+<!-- END SCRIPT -->
+
+  <span class="saint">
+    <h3>HARLEY WEIR</h3>
+    <p>Tokyo Fashion Week</p>
+  </span>
+
+<span class="vertical numbers">
+  <p class="medium"> 05 | <span class="larger">01</span> </p>
+</span>
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

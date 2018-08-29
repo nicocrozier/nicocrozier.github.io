@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  color: #000000;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+}
+
+main {
+  margin: 2rem;
+  margin-top: 12rem;
+}
+
+
+/* DESKTOP GRID */
+@media screen and (min-width:306px) {
+
+  .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  max-height: 1200px ;
+  }
+
+/* Title */
+.g01 {
+  grid-column: 1 / 2 ;
+  grid-row: 1 / 2;
+}
+
+
+.g02 {
+  grid-column: 2 / 4;
+  grid-row: 2 / 5;
+  z-index: 1;
+  opacity: 1;
+}
+
+
+ .g03 {
+   grid-column: 3 / 5;
+   grid-row: 4 / 7 ;
+   opacity: 1;
+ }
+
+
+ .saint {
+   position:relative;
+   grid-column: 2 / 3;
+   grid-row:8;
+   background-color: white;
+   z-index: 2;
+   text-align: center;
+ }
+
+
+
+ .title {
+   padding-top: 1vh;
+   padding-left: 3vh;
+   font-family: monospace;
+   font-size: 14px;
+   color: black;
+
+ }
+
+h3 {
+ font-family:sans-serif;
+ font-weight: normal;
+ font-size: 2.4rem;
+ line-height: 1.4;
+ margin: 0;
+
+ }
+
+p {
+  font-family: monospace;
+  font-size: 1rem;
+  color: grey;
+}
+
+.mood {
+  grid-column: 4 / 5;
+  grid-row: 2;
+  text-align: left;
+  padding: 20px;
+}
+
+.vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+
+.numbers {
+  grid-column: 5 / 6;
+  grid-row: 6 / span 7;
+}
+
+.medium {
+  font-family: helvetica;
+  font-size: 2vh;
+}
+
+.larger {
+  font-family: helvetica;
+  font-size: 4rem;
+  color: black;
+}
+
+.shoppingbag {
+  padding-top: 1vh;
+  padding-left: 3vh;
+  font-family: monospace;
+  font-size: 14px;
+  grid-column: 5 / 6;
+  grid row: 1;
+  float: right;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
+
+/* MOBILE SCREEN */
+
+@media only screen and (max-width:620px) {
+
+  .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 200px);
+  grid-gap: 5rem;
+  max-width: 100%;
+  justify-content: center;
+
+}
+}
