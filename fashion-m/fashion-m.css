@@ -55,7 +55,7 @@ main {
  .saint {
    position:relative;
    grid-column: 2 / 3;
-   grid-row:6;
+   grid-row:4s;
    background-color: white;
    z-index: 2;
    text-align: center;
