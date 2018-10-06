@@ -49,7 +49,7 @@ if (hourNow > 17) {
 
   greeting = "God Morgon, the time is now: "
 
-} else if (hourNow > 0) {
+} else if (hourNow >= 0) {
 
   greeting = "Welcome to the dance party!"
 
