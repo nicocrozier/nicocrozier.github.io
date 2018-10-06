@@ -51,7 +51,7 @@ if (hourNow > 17) {
 
 } else if (hourNow >= 0) {
 
-  greeting = "Welcome to the dance party!"
+  greeting = "Welcome to the dance party! The time is now: "
 
 }
 else {
