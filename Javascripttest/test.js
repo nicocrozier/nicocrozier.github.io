@@ -37,7 +37,7 @@ var hourNow = today.getHours();
 var minNow = today.getMinutes();
 var greeting;
 
-if (hourNow > 18) {
+if (hourNow > 17) {
 
   greeting = "Good evening, the time is: ";
 
@@ -45,11 +45,16 @@ if (hourNow > 18) {
 
   greeting = "Good afternoon, the time is now: ";
 
-} else if (hourNow > 0) {
+} else if (hourNow > 4) {
 
   greeting = "God Morgon, the time is now: "
 
-} else {
+} else if (hourNow > 0) {
+
+  greeting = "Welcome to the dance party!"
+
+}
+else {
 
   greeting = "Hej, The time is now: "
 
