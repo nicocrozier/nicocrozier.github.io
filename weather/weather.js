@@ -1,5 +1,5 @@
 $(document).ready(function(){
-
+/*
   // Get location
   navigator.geolocation.getCurrentPosition(success, error);
 
@@ -14,10 +14,10 @@ $(document).ready(function(){
     console.log("error");
   }
 
-
+*/
 
   function weather(lat, long){
-    var URL = `https://fcc-weather-api.glitch.me/api/current?lat=${lat}&lon=${long}`;
+    var URL = `https://fcc-weather-api.glitch.me/api/current?lat=37.77&lon=-122.41`;
 
     $.getJSON(URL, function(data){
       console.log(data);
