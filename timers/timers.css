@@ -1,0 +1,50 @@
+body {
+  background: #eee;
+}
+
+#message {
+  width: 400px;
+  background: #ddaaaa;
+  padding: 20px;
+  padding: 20px;
+  font-family: helvetica;
+  font-size: 18px;
+  color: #444;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid #ddaaab;
+  font-weight: bold;
+  opacity: 0;
+
+
+
+
+}
+
+#message.show {
+  position: absolute;
+  opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+
+
+}
+
+
+
+
+#dance {
+  opacity: 0;
+}
+
+
+#dance.showing {
+  position: absolute;
+  opacity: 1;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
