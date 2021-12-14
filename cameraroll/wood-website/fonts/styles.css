@@ -1,0 +1,8 @@
+
+@font-face {
+  font-family: 'Canela-Thin';
+  src: url('Canela-Thin.eot?#iefix') format('embedded-opentype'),  url('Canela-Thin.otf')  format('opentype'),
+	     url('Canela-Thin.woff') format('woff'), url('Canela-Thin.ttf')  format('truetype'), url('Canela-Thin.svg#Canela-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
