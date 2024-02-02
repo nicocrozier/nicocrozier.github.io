@@ -207,12 +207,86 @@ div.a {
 
 
 <!-- photos -->
-<center style="margin-bottom: 10px;">
+	
+<!--<center style="margin-bottom: 10px;">-->
 	<!--<img src="https://raw.githubusercontent.com/nicocrozier/nicocrozier.github.io/master/image.jpg" width="400" />-->
-
+<!--
   <video width="320" autoplay controls loop>
   <source src="https://raw.githubusercontent.com/nicocrozier/nicocrozier.github.io/master/bbbbb.mp4" type="video/mp4">
-</center>
+</center> -->
+
+
+
+
+  <pre id="ascii-art" style="font-family: monospace; line-height: 13.4px; white-space: pre-wrap; display: flex; justify-content: center;">
+
+                             ..::..
+                      .=*%/7AA$$$$AA7/%*=.
+                   :*@A$$$A7/@@%%@@/7A$$$A@*:
+                 +@A$$7@*=.          .=*%7$$A/+
+               *7$$7%=                    =#7$$7*
+             =/$$7*.                         +/$$7=
+            #A$A*                              *7$$%
+          .@$$@.                                .@$$/.
+         ./$$% =%////////////////////@*           #$$/.
+         @$$% +$$$$$$$$$$$$$$$$$$$$$$$$/           #$$/
+        *$$@  #$$$$$$$$$$$@=:/$$$$$$$$$$#           @$$#
+       .A$A.   %7AAAAAAA/+  .7$$$$$$$$$$A=          .7$A:
+       #$$#      .......   ./$$$$$$$$$$$$/           *$$%
+       7$A:                /$$$A%#7$$$$$$$#          .A$7
+      .A$7                @$$$$#   @$$$$$$A:          /$A:
+      :$$/               %$$$$$@    %$$$$$$@          @$$=
+      :$$/              %$$$$$$@     %$$$$$$*         @$$=
+      .A$7             #$$$$/%#.      #$$$$$A.        /$A:
+       7$A:           *$$$7+           *A$$$$@       .A$7
+       #$$#          *A$$@.             +A$$$$+      *$$%
+       .A$A.        =$$A#                +A$$$7.    .7$A:
+        #$$@        :@@=                  =A$$$%    %$$#
+         @$$#                              =7$$$:  #$$/
+         ./$$#                              :/7/. #$$7.
+          ./$$@.                                .@$$/.
+            %$$7+                              +7$$%
+             +7$$/+                          +/$$7+
+               *7$$7#:                    :#7$$7#
+                 */$$$7%+:.          .:+%7$$$/*.
+                   :#/A$$$A7/@%%%%@/7A$$$A/#:
+                      .=*@/7A$$$$$$A7/@#=.
+                            ..::::..
+
+
+  </pre>
+
+
+    <script>
+        const asciiArtElement = document.getElementById('ascii-art');
+        let asciiArtText = asciiArtElement.textContent;
+        const characters = '.:*&^%$#@!~+=-;ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        const textLength = asciiArtText.length;
+
+        function replaceCharacters() {
+            for (let i = 0; i < 100; i++) {
+                let randomIndex = Math.floor(Math.random() * textLength);
+                let randomChar = characters.charAt(Math.floor(Math.random() * characters.length));
+                let currentChar = asciiArtText.charAt(randomIndex);
+
+                if (currentChar !== '\n' && currentChar !== ' ') {
+                    asciiArtText = asciiArtText.substring(0, randomIndex) + randomChar + asciiArtText.substring(randomIndex + 1);
+                }
+            }
+            asciiArtElement.textContent = asciiArtText;
+        }
+
+        setInterval(replaceCharacters, 22); // Change 20 characters every 500 milliseconds (0.5 seconds)
+    </script>
+
+
+
+
+
+
+
+	
+	
 
 <div style="text-align: center; margin-left: 100px; margin-right: 100px;">
   <font size="2.8" face="Helvetica">
